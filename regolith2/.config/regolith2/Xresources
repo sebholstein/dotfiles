@@ -1,0 +1,4 @@
+!regolith.look.path: /usr/share/regolith-look/nevil
+regolith.look.path: /usr/share/regolith-look/nord
+i3-wm.gaps.inner.size: 12
+
