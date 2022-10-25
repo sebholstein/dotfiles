@@ -1,6 +1,6 @@
 # Dotiles
 
-This are my dotfiles that follow my personal preference.
+These are my dotfiles that follow my personal preference.
 
 ## Tools I use
 
