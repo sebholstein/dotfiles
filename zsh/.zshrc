@@ -134,6 +134,12 @@ alias lg="lazygit"
 alias p="pnpm"
 
 # pnpm
+if [[ $OSTYPE == 'darwin'* ]]; then
+export PNPM_HOME="/Users/Sebastian.Holstein/.local/share/pnpm"
+else
 export PNPM_HOME="/home/sebastian/.local/share/pnpm"
+fi
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
