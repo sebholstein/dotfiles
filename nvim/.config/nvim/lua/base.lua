@@ -44,5 +44,11 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   command = "set nopaste"
 })
 
+require('telescope').setup{
+  defaults = {
+    file_ignore_patterns = { "node_modules" }
+  }
+}
+
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
