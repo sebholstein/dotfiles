@@ -31,6 +31,7 @@ vim.opt.laststatus = 2 -- neded for Staline.vim
 vim.cmd("set winbar=%=%m\\ %f")
 
 vim.g.lazygit_floating_window_use_plenary = 1
+vim.g.lexima_enable_basic_rules = 1
 
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1

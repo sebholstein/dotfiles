@@ -29,6 +29,7 @@ packer.startup(function(use)
   --   run = ':GoUpdateBinaries'
   -- }
   use 'SirVer/ultisnips'
+  use 'cohama/lexima.vim' -- auto closing features
 use {
   'nvim-tree/nvim-tree.lua',
   requires = {
