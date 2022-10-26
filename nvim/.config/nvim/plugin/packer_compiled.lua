@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/sebastian/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/sebastian/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/sebastian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/sebastian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/sebastian/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/Sebastian.Holstein/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/Sebastian.Holstein/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/Sebastian.Holstein/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/Sebastian.Holstein/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/Sebastian.Holstein/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,88 +74,153 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
+  ["lsp-colors.nvim"] = {
+    config = { "\27LJ\2\n~\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4\fWarning\f#e0af68\16Information\f#0db9d7\nError\f#db4b4b\tHint\f#10B981\nsetup\15lsp-colors\frequire\0" },
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
   },
   neogit = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/neogit",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   onehalf = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme onehalfdark\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/onehalf/vim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/onehalf/vim",
     url = "https://github.com/sonph/onehalf"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["staline.nvim"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/staline.nvim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/staline.nvim",
     url = "https://github.com/tamton-aquib/staline.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ultisnips = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/ultisnips",
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/SirVer/ultisnips"
   },
-  ["vim-go"] = {
+  ["vim-floaterm"] = {
     loaded = true,
-    path = "/home/sebastian/.local/share/nvim/site/pack/packer/start/vim-go",
-    url = "https://github.com/fatih/vim-go"
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Runtimepath customization
 time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",/home/sebastian/.local/share/nvim/site/pack/packer/start/onehalf/vim"
+vim.o.runtimepath = vim.o.runtimepath .. ",/Users/Sebastian.Holstein/.local/share/nvim/site/pack/packer/start/onehalf/vim"
 time([[Runtimepath customization]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 -- Config for: onehalf
 time([[Config for onehalf]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme onehalfdark\bcmd\bvim\0", "config", "onehalf")
 time([[Config for onehalf]], false)
+-- Config for: lsp-colors.nvim
+time([[Config for lsp-colors.nvim]], true)
+try_loadstring("\27LJ\2\n~\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\4\fWarning\f#e0af68\16Information\f#0db9d7\nError\f#db4b4b\tHint\f#10B981\nsetup\15lsp-colors\frequire\0", "config", "lsp-colors.nvim")
+time([[Config for lsp-colors.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
