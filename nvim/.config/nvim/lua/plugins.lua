@@ -7,7 +7,7 @@ end
 -- manual installation steps for the plugins:
 -- - install nerdfont
 
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
