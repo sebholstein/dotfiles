@@ -103,8 +103,14 @@ require'lspconfig'.astro.setup{
     capabilities = capabilities
 }
 
-require'lspconfig'.tailwindcss.setup{
-  on_attach = on_attach,
-    capabilities = capabilities
-}
+local cmd = { "typescript-language-server", "--stdio" }
 
+if vim.fn.getcwd() == "/Users/Sebastian.Holstein/projects/renew/ui" then
+  cmd = { "volta", "run", "--node", "18", "typescript-language-server", "--stdio" }
+end
+
+require'lspconfig'.tsserver.setup {
+ on_attach = on_attach,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = cmd
+ }
